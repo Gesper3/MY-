@@ -1,0 +1,321 @@
+* Base Styling */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+} 
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a{
+    text-decoration: none;
+    font-weight: 400;
+    /* 1.6 * 10 = 16px */
+    font-size: 1.6rem;
+    color: whitesmoke;
+}
+h1,h2,p{
+    
+    margin: 1.6rem 0;
+}
+h1{
+    font-weight: 800;
+    font-size: 3.6rem;
+}
+h2{
+    font-weight: 800;
+    font-size:  2.1rem;
+    
+}
+p{
+    font-weight: 400;
+    font-size: 1.8rem;
+    
+}
+img{
+    width: 100%;
+    height: auto;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+    margin: auto;
+}
+section{
+    padding: 100px 0;
+}
+/* Hero section */
+header{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.6 )), url('techgroup.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: whitesmoke;
+}
+.content{
+    display: flex;
+  
+}
+.logo h1{
+    font-size:3.2rem;
+    color: #4CAF50;
+    margin: 0;
+}
+nav{
+    padding: 2% 8%;
+    display:  flex;
+    justify-content: space-between;
+    
+}
+
+
+#Navigation{
+    
+    background: #222;
+}
+nav ul{
+    list-style-type: none;
+}
+nav img{
+    height: 2.3rem;
+    width: 2.3rem;
+    display: none;
+}
+
+.Navigation{
+    
+    background: #222;
+}
+nav ul li{
+    display: inline-block;
+    margin-left: 2.5rem;
+}
+nav ul li a:hover{
+    color: #4CAF50;
+    transition: .5s ease-in-out ;
+}
+.header-content{
+    width: 50%;
+    position: relative;
+    top: 16px;
+    left: 18px;
+}
+form{
+    margin: 2.4rem 0;
+}
+input{
+    font-size: 1.8rem;
+}
+select {
+    font-size: 1.8rem
+}
+select option{
+    font-size: 1.4rem
+}
+input[type=text],
+input[type=email]
+{
+    width: 50%;
+    padding: 12px 20px;
+    margin: 1.2rem 0;
+    display: block;
+    border: 1px solid #ccc;
+}
+input[type=submit]{
+    width: 50%;
+    background-color: #4caf50;
+    color: #fff;
+    padding: 12px 20px;
+    margin: 6px 0;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.Submit{
+    background-color: #4caf50;
+    color: #fff;
+    padding: 8px 100px;
+    display: inline-block;
+    margin: 2rem 2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+
+
+}
+.Submit:hover{
+    background-color: #61c964;
+    padding: 8px 110px;
+    transition: 0.1s;
+
+}
+
+input::placeholder{
+    font-size: 1.3rem;
+    color: #ccc;
+}
+input[type=radio]:hover{
+   cursor: pointer;
+}
+.btn{
+    
+    background-color: #4caf50;
+    color: #fff;
+    padding: 8px 16px;
+    display: inline-block;
+    margin: 2rem 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+
+}
+/* Carasel Section */
+.slider{
+    width: 800px;
+    height: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+.slides{
+    display: flex;
+    width: 500%;
+    height: 500%;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-left: 2%;
+    padding-right: -2%;
+    background: #23E3C9;
+    justify-content: left;
+    height: 60vh;
+    border-radius: 10px;
+    align-items: center;
+    
+}
+.slides input{
+    display: none; 
+}
+.slide{
+width: 20%;
+transition: 2s;
+}
+.slide img{
+    height: 365px;
+    width: 560px;
+    border-radius: 10px;
+    padding-right: -2%;
+}
+.slide-first img{
+    height: 365px;
+    width: 560px;
+}
+.navigation-manual{
+position: absolute;
+width: 800px;
+margin-top: -60px;
+margin-left: 2%;
+display: flex;
+justify-content: center;
+}
+.manual-btn{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+} 
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background: #40D3Dc;
+}
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+#radio5:checked ~ .first{
+    margin-left: -80%;
+}
+.about2{
+    background-color: #222;
+    color: whitesmoke;
+}
+.about2-left{
+    flex-basis: 50%;
+}
+.about2-right{
+    flex-basis: 30%;
+}
+.about2 .card{
+    padding: 3rem 8rem;
+    color:#222;
+    background-color: #DCDCDC;
+    margin: 1.6rem;
+    text-align: center;
+}
+
+
+
+
+/* About Section */
+.about-left,
+.about-middle,
+.about-right{
+    flex-basis: 30%;
+    padding: 1.6rem;
+}
+
+
+
+
+
+
+
+
+/* Media Query */
+@media only screen and (max-width: 740px){
+    nav{
+        flex-direction: column;
+        position: relative;
+    }
+    nav img{
+        display: block;
+        position: absolute;
+        top: 18px;
+        right: 32px;
+    } 
+    nav img:hover{
+        cursor:pointer ;
+    }
+    nav ul{
+        background: whitesmoke;
+        display: none ;
+    }
+    .showmenu{
+        display: block;
+    }
+    nav ul li{
+        display: block;
+        padding: 2% 0;
+        
+    }
+    nav ul li a{
+        color: #222;
+    }
+}

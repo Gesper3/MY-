@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Trip</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h2>Create a Trip</h2>
+    <form id="createTrip">
+        <input type="text" name="trip_name" placeholder="Trip Name" required>
+        <input type="text" name="destination" placeholder="Destination" required>
+        <input type="date" name="travel_dates" required>
+        <input type="number" name="budget" placeholder="Budget" required>
+        <button type="submit">Create Trip</button>
+    </form>
+
+    <div id="createTripMessage"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>

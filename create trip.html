@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="create-trip">
+        <h2>Create a New Trip</h2>
+        <form id="tripForm">
+            <input type="text" id="tripName" placeholder="Trip Name" required>
+            <input type="date" id="startDate" required>
+            <input type="date" id="endDate" required>
+            <input type="number" id="budget" placeholder="Budget" required>
+            <button type="submit">Create Trip</button>
+        </form>
+    </section>
+    <!-- Additional sections for other features -->
+    <section id="currency-converter">
+        <h2>Currency Converter</h2>
+        <form id="currencyForm">
+            <input type="text" id="amount" placeholder="Amount">
+            <select id="currencyFrom">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+            </select>
+            <select id="currencyTo">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+            </select>
+            <button type="submit">Convert</button>
+            <div id="conversionResult"></div>
+        </form>
+    </section>
+    <!-- Placeholder for saved trips, accommodation searches, etc. -->
+</main>
+<footer>
+    <p>Budget Trip Planner &copy; 2025</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
